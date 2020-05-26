@@ -1,0 +1,19 @@
+[package]
+name = "hives"
+version = "0.1.0"
+authors = ["Tomer Ayal <tomer.trc@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "hivelib"
+path = "src/lib.rs"
+crate-type = ["lib"]
+
+[[bin]]
+name = "hives"
+path = "src/main.rs"
+
+[dependencies]
+git2 = "0.13"
+reqwest = "0.10.4"
+clap = "3.0.0-beta.1"
